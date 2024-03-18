@@ -14,16 +14,16 @@ class MilesToKilometer:
         tite_label = ttk.Label(master=self.window, text='Miles to kilometers', font=('Comic Sans MS', 22, 'bold'))
 
         tite_label.pack()
-        input_frame= ttk.Frame(master=self.window)
+        input_frame = ttk.Frame(master=self.window)
 
         entry = ttk.Entry(master=input_frame, textvariable=self.entry_int)
-        button = ttk.Button(master=input_frame, text= 'Convert', command=self.convert)
+        button = ttk.Button(master=input_frame, text='Convert', command=self.convert)
         entry.pack(side='left', padx=10)
         button.pack(side='left')
         input_frame.pack(pady=10)
 
         output_label = ttk.Label(master=self.window, text='output',
-                                 font=('Comic Sans MS',18),
+                                 font=('Comic Sans MS', 18),
                                  textvariable=self.output_string)
         output_label.pack()
 
